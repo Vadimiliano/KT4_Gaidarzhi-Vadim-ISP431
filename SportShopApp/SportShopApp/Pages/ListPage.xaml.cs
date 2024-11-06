@@ -28,6 +28,12 @@ namespace SportShopApp.Pages
 
         private void EditUserButton_Click(object sender, RoutedEventArgs e)
         {
+            Classes.Manager.MainFrame.Navigate(new Pages.EditPage());
+        }
+
+        private void AddUserButton_Click(object sender, RoutedEventArgs e)
+        {
+            Classes.Manager.MainFrame.Navigate(new Pages.AddPage());
 
         }
     }

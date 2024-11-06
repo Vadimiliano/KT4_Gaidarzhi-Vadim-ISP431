@@ -23,3 +23,7 @@ C:\Users\comcuru\Desktop\SportShop\SportShopApp\SportShopApp\obj\Debug\SportShop
 C:\Users\comcuru\Desktop\SportShop\SportShopApp\SportShopApp\obj\Debug\SportShopApp.csproj.CopyComplete
 C:\Users\comcuru\Desktop\SportShop\SportShopApp\SportShopApp\obj\Debug\SportShopApp.exe
 C:\Users\comcuru\Desktop\SportShop\SportShopApp\SportShopApp\obj\Debug\SportShopApp.pdb
+C:\Users\comcuru\Desktop\SportShop\SportShopApp\SportShopApp\obj\Debug\Pages\AddPage.g.cs
+C:\Users\comcuru\Desktop\SportShop\SportShopApp\SportShopApp\obj\Debug\Pages\EditPage.g.cs
+C:\Users\comcuru\Desktop\SportShop\SportShopApp\SportShopApp\obj\Debug\Pages\AddPage.baml
+C:\Users\comcuru\Desktop\SportShop\SportShopApp\SportShopApp\obj\Debug\Pages\EditPage.baml

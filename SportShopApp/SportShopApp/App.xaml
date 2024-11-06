@@ -6,6 +6,21 @@
     <Application.Resources>
         <Style TargetType="TextBlock">
             <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+            <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+            <Setter Property="FontSize" Value="25"></Setter>
         </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+            <Setter Property="FontSize" Value="10"></Setter>
+            <Setter Property="Background" Value="#FF498C51"></Setter>
+            <Setter Property="Height" Value="40"></Setter>
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+            <Setter Property="FontSize" Value="10"></Setter>
+        </Style>
+
     </Application.Resources>
 </Application>

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\comcuru\Desktop\SportShop\SportShopApp\SportShopApp\App.xaml
-2-1533538887
+4-749723508
 2-747231112
-1518172612
+171864382450
 181555694343
-MainWindow.xaml;Pages\ListPage.xaml;
+MainWindow.xaml;Pages\AddPage.xaml;Pages\EditPage.xaml;Pages\ListPage.xaml;
 
-False
+True
 

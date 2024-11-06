@@ -10,22 +10,21 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="50"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <ListView x:Name="UserListview" Grid.Row="1">
+        <ListView x:Name="UserListview" Grid.Row="0" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="300"></ColumnDefinition>
-                            <ColumnDefinition Width="150"></ColumnDefinition>
+                            <ColumnDefinition Width="500"></ColumnDefinition>
+                            <ColumnDefinition Width="250"></ColumnDefinition>
                             <ColumnDefinition Width="*"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
-                        <StackPanel Grid.Column="0">
-                            <TextBlock Text="{Binding UserName,
+                        <StackPanel Grid.Column="0" Margin="10">
+                            <TextBlock FontWeight="Bold" Text="{Binding UserName,
                             StringFormat={}{0}}"></TextBlock>
                             <TextBlock Text="{Binding Email,
                             StringFormat={}{0}}"></TextBlock>
@@ -36,7 +35,7 @@
                         </StackPanel>
 
 
-                        <StackPanel Grid.Column="1">
+                        <StackPanel Grid.Column="1" Margin="0,10,0,0">
                             <TextBlock Text="{Binding UserRole.Role,
                             StringFormat={}{0}}"></TextBlock>
                         </StackPanel>
@@ -47,6 +46,8 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+
+        <Button x:Name="AddUserButton" Click="AddUserButton_Click"  Content="Добавить" HorizontalAlignment="Right" Margin="0,0,20,0" Grid.Row="1" Width="150"></Button>
         
     </Grid>
 </Page>
