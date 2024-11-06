@@ -24,5 +24,10 @@ namespace SportShopApp.Pages
         {
             InitializeComponent();
         }
+
+        private void GoBack_Click(object sender, RoutedEventArgs e)
+        {
+            Classes.Manager.MainFrame.Navigate(new Pages.ListPage());
+        }
     }
 }

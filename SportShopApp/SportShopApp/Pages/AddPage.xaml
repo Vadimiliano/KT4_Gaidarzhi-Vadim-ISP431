@@ -8,21 +8,26 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Добавление пользователей">
 
-    <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+    <Grid>
+         <Grid.RowDefinitions>
+            <RowDefinition Height="420"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+        </Grid.RowDefinitions>
+       <Grid Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">
         <Grid.RowDefinitions>
-            <RowDefinition Height="40"></RowDefinition>
-            <RowDefinition Height="40"></RowDefinition>
-            <RowDefinition Height="40"></RowDefinition>
-            <RowDefinition Height="40"></RowDefinition>
-            <RowDefinition Height="40"></RowDefinition>
-            <RowDefinition Height="40"></RowDefinition>
-            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition  Width="150"></ColumnDefinition>
-            <ColumnDefinition  Width="150"></ColumnDefinition>
-            <ColumnDefinition  Width="150"></ColumnDefinition>
+            <ColumnDefinition  Width="200"></ColumnDefinition>
+            <ColumnDefinition  Width="200"></ColumnDefinition>
+            <ColumnDefinition  Width="200"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
         <Label Content="Фамилия" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left"></Label>
@@ -33,5 +38,30 @@
         <Label Content="Номер телефона" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left"></Label>
         <Label Content="Пол" Grid.Row="6" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left"></Label>
 
+
+        <TextBox x:Name="FirstNameTextBox"  Grid.Row="0" Grid.Column="1"></TextBox>
+        <TextBox x:Name="NameTextBox"  Grid.Row="1" Grid.Column="1"></TextBox>
+        <TextBox x:Name="PatronymicTextBox"  Grid.Row="2" Grid.Column="1"></TextBox>
+        <ComboBox x:Name="RoleComboBox" Grid.Row="3" Grid.Column="1" DisplayMemberPath="Role"></ComboBox>
+        <TextBox x:Name="DateOfBirthTextBox"  Grid.Row="4" Grid.Column="1"></TextBox>
+        <TextBox x:Name="PhoneNumberTextBox"  Grid.Row="5" Grid.Column="1"></TextBox>
+        <ComboBox x:Name="GenderComboBox" Grid.Row="6" Grid.Column="1" DisplayMemberPath="Gender"></ComboBox>
+
+
+        <Label Content="Email" Grid.Row="0" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Left"></Label>
+        <Label Content="Логин" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center"  HorizontalAlignment="Left"></Label>
+        <Label Content="Пароль" Grid.Row="2" Grid.Column="2" VerticalAlignment="Center"  HorizontalAlignment="Left"></Label>
+        <TextBlock TextWrapping="Wrap" Text="Подтведите пароль" Grid.Row="3" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+
+
+        <TextBox x:Name="EmailTextBox"  Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center"></TextBox>
+        <TextBox x:Name="LoginTextBox"  Grid.Row="1" Grid.Column="3"></TextBox>
+        <TextBox x:Name="PasswordTextBox"  Grid.Row="2" Grid.Column="3"></TextBox>
+        <TextBox x:Name="AcceptPasswordTextBox"  Grid.Row="3" Grid.Column="3"></TextBox>
+            <Button x:Name="AddButton" Click="AddButton_Click" Content="Сохранить" Grid.Row="6"
+                    Grid.Column="3"></Button>
+        </Grid>
+
+        <Button x:Name="GoBackButton" Click="GoBackButton_Click" Content="Назад" Margin="0,0,20,0" Grid.Row="1" Width="200" HorizontalAlignment="Right" VerticalAlignment="Center"></Button>
     </Grid>
 </Page>

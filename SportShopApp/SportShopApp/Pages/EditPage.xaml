@@ -9,6 +9,13 @@
       Title="EditPage">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="400"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" TextWrapping="Wrap" Text="Извините мы работаем над ошибкой попробуйте позже" FontFamily="Comic Sans MS" FontSize="27" HorizontalAlignment="Center"
+                   VerticalAlignment="Center"></TextBlock>
+
+        <Button x:Name="GoBack" Click="GoBack_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Content="Назад"></Button>
     </Grid>
 </Page>
